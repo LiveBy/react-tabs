@@ -5,7 +5,8 @@
   "main": "lib/main.js",
   "scripts": {
     "test": "./node_modules/.bin/rackt test --single-run --browsers Firefox",
-    "start": "./node_modules/.bin/rackt server"
+    "start": "./node_modules/.bin/rackt server",
+    "build": "./node_modules/.bin/rackt build"
   },
   "repository": {
     "type": "git",
@@ -28,11 +29,12 @@
     "react-dom": "^0.14.7"
   },
   "devDependencies": {
-    "rackt-cli": "^0.5.4",
+    "karma": "^0.13.21",
     "react": "^0.14.7",
+    "react-addons-test-utils": "^0.14.7",
+    "rackt-cli": "mzabriskie/rackt-cli",
     "react-dom": "^0.14.7",
-    "react-modal": "rackt/react-modal",
-    "react-addons-test-utils": "^0.14.7"
+    "react-modal": "rackt/react-modal"
   },
   "dependencies": {
     "classnames": "^2.2",
